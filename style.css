@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #E2E2E2;
+    height: 14vh;
+    align-items: center;
+}
+
+.mobile{
+    display: none;
+}
+
+header nav{
+    display: flex;
+    width: 17vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header div{
+    display: flex;
+    width: 10vw;
+    justify-content: space-around;
+}
+
+h1{
+    font-family: 'Caesar Dressing', cursiva;
+    font-weight: 100;
+    text-transform: lowercase;
+}
+
+main nav{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
+}
+main ul{
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+    list-style: none;
+}
+
+main div{
+    justify-content: flex-end;
+    color: white;
+    display: flex;
+    width: 24vw;
+    flex-direction: column;
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.caixaBox{
+    background-image: url("./assets/img.jpg");
+}
+
+@media (max-width:500px) {
+    header{
+        flex-direction: row-reverse;
+    }
+   
+    .iconeHeader{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+
+}
